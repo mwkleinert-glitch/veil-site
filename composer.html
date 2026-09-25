@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>See VEIL at your location — Place your tank</title>
+  <meta name="description" content="Upload a photo of your yard and preview a VEIL wrap on a placed tank. Photo stays in your browser.">
+  <meta name="theme-color" content="#F4F0E8">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&family=Source+Sans+3:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="wrap nav">
+      <a class="brand" href="index.html"><span class="brand-mark">VEIL</span><span class="brand-by">by EFE</span></a>
+      <button class="menu-toggle" type="button" data-menu aria-expanded="false" aria-label="Open menu">Menu</button>
+      <nav class="nav-links" data-nav>
+        <a href="index.html">Home</a>
+        <a href="how-it-works.html">How it works</a>
+        <a href="products.html">Products</a>
+        <a href="patterns.html">Patterns</a>
+        <a href="navigator.html">Navigator</a>
+        <a href="composer.html" aria-current="page">Place tank</a>
+        <a href="safety.html">Safety</a>
+        <a href="inquire.html">Inquire</a>
+        <a class="btn" href="inquire.html">Request a look</a>
+      </nav>
+    </div>
+  </header>
+  <main>
+    <section class="hero">
+      <div class="wrap">
+        <p class="eyebrow">Location Composer</p>
+        <h1>See VEIL at your location</h1>
+        <p class="lede">Upload a photo of where the tank sits (or will sit). Place a tank, pick a light-value wrap, and toggle bare vs wrapped. The photo never leaves this phone.</p>
+      </div>
+    </section>
+    <section class="section">
+      <div class="wrap">
+        <div class="composer-tools">
+          <label class="btn">Upload photo
+            <input id="photo" type="file" accept="image/*" capture="environment" hidden>
+          </label>
+          <button class="btn btn-ghost" type="button" id="toggle-wrap">Toggle bare / wrapped</button>
+          <button class="btn btn-ghost" type="button" id="reset">Reset tank</button>
+          <button class="btn btn-ghost" type="button" id="download">Download preview</button>
+        </div>
+        <p class="eyebrow">Tank size</p>
+        <div class="filters" id="c-sizes"></div>
+        <p class="eyebrow">Wrap</p>
+        <div class="filters" id="c-patterns"></div>
+        <div class="composer-stage" id="stage">
+          <canvas id="board" width="1176" height="784"></canvas>
+          <div class="composer-empty" id="empty">Upload a photo of where the tank sits (or will sit).</div>
+        </div>
+        <p class="hint">Drag the tank. Pinch or use the scale buttons to size it. Rotate with the handles if needed.</p>
+        <div class="composer-tools">
+          <button class="btn btn-ghost" type="button" id="smaller">Smaller</button>
+          <button class="btn btn-ghost" type="button" id="larger">Larger</button>
+          <button class="btn btn-ghost" type="button" id="left">Rotate left</button>
+          <button class="btn btn-ghost" type="button" id="right">Rotate right</button>
+        </div>
+        <p class="tiny">Preview only — final fit depends on tank orientation, dome style, and site access. This is not a construction drawing. Your photo is processed in this browser only. It is not uploaded to our servers, analytics, or GitHub.</p>
+        <div class="hero-actions" style="margin-top:1rem">
+          <a class="btn" href="inquire.html">Ask about this tank</a>
+          <a class="btn btn-ghost" href="navigator.html">Back to Navigator</a>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="site-footer">
+    <div class="wrap">
+      <div class="footer-grid">
+        <div>
+          <div class="brand-mark" style="color:#F4F0E8;letter-spacing:.16em;font-family:Fraunces,serif;">VEIL</div>
+          <p>Removable landscape wraps for aboveground ASME propane tanks.</p>
+        </div>
+        <div>
+          <strong style="color:#F4F0E8">Visit</strong>
+          <p><a href="navigator.html">Wrap Navigator</a><br>
+          <a href="products.html">Products</a><br>
+          <a href="safety.html">Service access</a></p>
+        </div>
+        <div>
+          <strong style="color:#F4F0E8">Contact</strong>
+          <p>Micah Kleinert<br><a href="inquire.html">Inquiry form</a></p>
+        </div>
+      </div>
+      <p class="ip-line" data-ip-line>
+        VEIL by EFE is a trade style. Product intellectual property is held by Micah Kleinert and is not assigned unless a separate written assignment says otherwise.
+        VEIL is protected by U.S. patent. Patent No. [PATENT NUMBER].
+        VEIL is visual / weather screening only — not insulation, not a fire enclosure, and not a modification of the tank.
+      </p>
+    </div>
+  </footer>
+  <script src="js/main.js"></script>
+  <script src="js/composer.js"></script>
+</body>
+</html>

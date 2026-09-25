@@ -209,6 +209,33 @@ textarea { min-height: 120px; resize: vertical; }
 }
 .leaf { width: 14px; height: 14px; display: inline-block; vertical-align: -1px; }
 
+.size-row { display: flex; flex-wrap: wrap; gap: 0.4rem; margin: 0.8rem 0 0; }
+.size-chip {
+  border: 1px solid var(--line); background: #fffdf8; border-radius: 999px;
+  padding: 0.35rem 0.7rem; font-size: 0.82rem; font-weight: 600; color: var(--ink-soft);
+}
+.size-chip.hero { border-color: var(--sage); color: var(--sage-2); }
+
+.filters { display: flex; flex-wrap: wrap; gap: 0.4rem; margin: 0.4rem 0 1rem; }
+.filter-btn {
+  border: 1px solid var(--line); background: #fffdf8; border-radius: 999px;
+  padding: 0.45rem 0.75rem; font: inherit; font-size: 0.88rem; cursor: pointer; color: var(--ink);
+}
+.filter-btn.on { background: var(--sage); color: var(--paper); border-color: var(--sage); }
+.scene-label { font-size: 0.88rem; font-weight: 600; margin: 0.6rem 0 0; }
+.composer-stage {
+  position: relative; background: #ddd6c8; border-radius: 16px; overflow: hidden;
+  min-height: 320px; touch-action: none; box-shadow: var(--shadow);
+}
+.composer-stage canvas { width: 100%; height: auto; display: block; background: #cfc7b8; }
+.composer-empty {
+  position: absolute; inset: 0; display: grid; place-items: center; text-align: center;
+  padding: 1.4rem; color: var(--ink-soft); font-weight: 600;
+}
+.composer-empty[hidden] { display: none; }
+.composer-tools { display: flex; flex-wrap: wrap; gap: 0.5rem; margin: 0.8rem 0; }
+.hint { font-size: 0.82rem; color: var(--ink-soft); }
+
 @media (max-width: 760px) {
   .nav-links {
     display: none; position: absolute; left: 0; right: 0; top: var(--nav-h);
@@ -218,3 +245,4 @@ textarea { min-height: 120px; resize: vertical; }
   .nav-links.open { display: flex; }
   .menu-toggle { display: inline-block; }
 }
+

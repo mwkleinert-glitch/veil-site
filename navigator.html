@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>VEIL Wrap Navigator — see the wrap on the tank</title>
+  <meta name="description" content="Browse VEIL landscape wraps by tank size, pattern, and setting: woods, farm, HOA, homeowner yard.">
+  <meta name="theme-color" content="#F4F0E8">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&family=Source+Sans+3:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="wrap nav">
+      <a class="brand" href="index.html"><span class="brand-mark">VEIL</span><span class="brand-by">by EFE</span></a>
+      <button class="menu-toggle" type="button" data-menu aria-expanded="false" aria-label="Open menu">Menu</button>
+      <nav class="nav-links" data-nav>
+        <a href="index.html">Home</a>
+        <a href="how-it-works.html">How it works</a>
+        <a href="products.html">Products</a>
+        <a href="patterns.html">Patterns</a>
+        <a href="navigator.html" aria-current="page">Navigator</a>
+        <a href="composer.html">Place tank</a>
+        <a href="safety.html">Safety</a>
+        <a href="inquire.html">Inquire</a>
+        <a class="btn" href="composer.html">See it at your place</a>
+      </nav>
+    </div>
+  </header>
+  <main>
+    <section class="hero">
+      <div class="wrap">
+        <p class="eyebrow">Wrap Navigator</p>
+        <h1>See the wrap sit in the scene.</h1>
+        <p class="lede">Pick a tank size, a light-value pattern, and a setting. Drag the slider from bare white tank to wrapped. Illustrative 500-gallon hero scenes — other sizes use the same views and are quoted.</p>
+      </div>
+    </section>
+    <section class="section">
+      <div class="wrap">
+        <p class="eyebrow">Tank size</p>
+        <div class="filters" id="sizes"></div>
+        <p class="eyebrow">Pattern</p>
+        <div class="filters" id="patterns"></div>
+        <p class="eyebrow">Setting</p>
+        <div class="filters" id="settings"></div>
+        <div class="slider" data-slider aria-label="Bare versus wrapped">
+          <img id="nav-before" src="assets/scene-woods-500-bare.jpg" alt="Bare white propane tank">
+          <img class="after" id="nav-after" src="assets/scene-woods-500-birch-woodland.jpg" alt="Same tank with VEIL wrap">
+          <input class="slider-range" type="range" min="1" max="99" value="58" aria-label="Drag to compare bare and wrapped">
+          <div class="slider-bar"></div>
+          <div class="slider-knob">↔</div>
+          <span class="slider-label before">Bare</span>
+          <span class="slider-label after">Wrapped</span>
+        </div>
+        <p class="scene-label" id="nav-label">500 gal · Woods · Birch Woodland</p>
+        <p class="tiny">Scenes are illustrative. Fill, PRV, gauge, and data-plate stay accessible. VEIL is not insulation, not a fire enclosure, and not a tank modification.</p>
+        <div class="hero-actions" style="margin-top:1rem">
+          <a class="btn" href="composer.html">Place this on your photo</a>
+          <a class="btn btn-ghost" href="inquire.html">Inquire</a>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="site-footer">
+    <div class="wrap">
+      <div class="footer-grid">
+        <div>
+          <div class="brand-mark" style="color:#F4F0E8;letter-spacing:.16em;font-family:Fraunces,serif;">VEIL</div>
+          <p>Removable landscape wraps for aboveground ASME propane tanks. Woods, farm, association yard, and home.</p>
+        </div>
+        <div>
+          <strong style="color:#F4F0E8">Visit</strong>
+          <p><a href="navigator.html">Wrap Navigator</a><br>
+          <a href="composer.html">See it at your place</a><br>
+          <a href="products.html">Sleeve · Magnet · Cast Film</a><br>
+          <a href="safety.html">Service access</a></p>
+        </div>
+        <div>
+          <strong style="color:#F4F0E8">Contact</strong>
+          <p>Micah Kleinert<br>Northern Michigan<br><a href="inquire.html">Inquiry form</a></p>
+        </div>
+      </div>
+      <p class="ip-line" data-ip-line>
+        VEIL by EFE is a trade style. Product intellectual property is held by Micah Kleinert and is not assigned unless a separate written assignment says otherwise.
+        VEIL is protected by U.S. patent. Patent No. [PATENT NUMBER].
+        VEIL is visual / weather screening only — not insulation, not a fire enclosure, and not a modification of the tank.
+      </p>
+    </div>
+  </footer>
+  <script src="js/main.js"></script>
+  <script src="js/navigator.js"></script>
+</body>
+</html>
