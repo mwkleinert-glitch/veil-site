@@ -104,19 +104,39 @@ h3 { font-size: 1.25rem; }
 .hero-photo > img {
   width: 100%;
   height: auto;
-  max-height: min(78vh, 760px);
-  object-fit: cover;
-  object-position: 50% 46%;
   display: block;
-  aspect-ratio: 3 / 2;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+  object-position: 38% 48%;
 }
 .hero-veil {
-  position: absolute;
-  left: 0; right: 0; bottom: 0;
-  padding: clamp(1.4rem, 4vw, 2.6rem) max(16px, calc((100% - var(--max)) / 2));
-  background: linear-gradient(transparent, rgba(26,25,22,.88) 42%);
-  color: #F4F0E8;
+  position: relative;
+  padding: 1.15rem 1.1rem 1.4rem;
+  background: var(--paper);
+  color: var(--ink);
   max-width: none;
+}
+.hero-veil .eyebrow { color: var(--sage) !important; }
+.hero-veil h1 { color: var(--ink) !important; max-width: 16ch; }
+.hero-sub { color: var(--ink-soft) !important; }
+.hero-veil .btn-ghost {
+  background: transparent;
+  color: var(--ink) !important;
+  border-color: var(--line);
+}
+@media (min-width: 880px) {
+  .hero-photo > img { aspect-ratio: 16 / 9; object-position: 40% 50%; }
+  .hero-veil {
+    position: absolute;
+    left: 0; right: 0; bottom: 0;
+    padding: clamp(1.4rem, 4vw, 2.6rem) max(16px, calc((100% - var(--max)) / 2));
+    background: linear-gradient(transparent, rgba(26,25,22,.82) 50%);
+    color: #F4F0E8;
+  }
+  .hero-veil .eyebrow { color: #c9d4c4 !important; }
+  .hero-veil h1 { color: #F4F0E8 !important; }
+  .hero-sub { color: #ddd6c8 !important; }
+  .hero-veil .btn-ghost { color: #F4F0E8 !important; border-color: rgba(244,240,232,.35); }
 }
 .hero-veil .eyebrow { color: #c9d4c4; }
 .hero-veil h1 {
