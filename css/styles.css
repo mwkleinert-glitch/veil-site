@@ -98,15 +98,17 @@ h3 { font-size: 1.25rem; }
 .hero-bleed { padding: 0 0 0; }
 .hero-photo {
   position: relative;
-  min-height: min(88vh, 820px);
+  min-height: 0;
   background: #1a1916;
 }
 .hero-photo > img {
   width: 100%;
-  height: min(88vh, 820px);
+  height: auto;
+  max-height: min(78vh, 760px);
   object-fit: cover;
-  object-position: 62% 55%;
+  object-position: 50% 46%;
   display: block;
+  aspect-ratio: 3 / 2;
 }
 .hero-veil {
   position: absolute;
