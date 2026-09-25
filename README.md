@@ -11,7 +11,9 @@ This is static HTML/CSS/JS. No build step. No live SMS.
 
 | File | Role |
 |---|---|
-| `index.html` | Home — problem, before/after slider, offer, pattern preview |
+| `index.html` | Home — hero, offer, sizes, navigator/composer CTAs |
+| `navigator.html` | Wrap Navigator — size / pattern / setting + bare vs wrapped |
+| `composer.html` | Location Composer — local photo + place tank + wrap |
 | `how-it-works.html` | What it is / isn’t, non-insulating distinction vs US 7,731,052 |
 | `products.html` | Sleeve / Magnet / Cast Film ladder, locked 500-gal prices |
 | `patterns.html` | Six light-value patterns |
@@ -35,8 +37,8 @@ Replace concept photos with real Northern Michigan installs when the pilot tanks
 - Cast Film ~$895 special order on 500-gal
 - Other sizes (120 V/H, 250, 325, 850, 1000): quote only
 - No other prices invented
-- No USPTO application number invented
-- Never “Patented.”
+- Patent line uses the token `[PATENT NUMBER]` until Micah pastes the real number
+- Composer photos stay in the visitor’s browser (no server upload)
 
 ## IP footer templates
 
