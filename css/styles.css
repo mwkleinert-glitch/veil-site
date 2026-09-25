@@ -95,6 +95,45 @@ h3 { font-size: 1.25rem; }
 .hero-copy p { color: var(--ink-soft); }
 .hero-actions { display: flex; flex-wrap: wrap; gap: 0.7rem; margin-top: 1.2rem; }
 
+.hero-bleed { padding: 0 0 0; }
+.hero-photo {
+  position: relative;
+  min-height: min(88vh, 820px);
+  background: #1a1916;
+}
+.hero-photo > img {
+  width: 100%;
+  height: min(88vh, 820px);
+  object-fit: cover;
+  object-position: 62% 55%;
+  display: block;
+}
+.hero-veil {
+  position: absolute;
+  left: 0; right: 0; bottom: 0;
+  padding: clamp(1.4rem, 4vw, 2.6rem) max(16px, calc((100% - var(--max)) / 2));
+  background: linear-gradient(transparent, rgba(26,25,22,.88) 42%);
+  color: #F4F0E8;
+  max-width: none;
+}
+.hero-veil .eyebrow { color: #c9d4c4; }
+.hero-veil h1 {
+  color: #F4F0E8;
+  max-width: 16ch;
+  font-size: clamp(2rem, 6.4vw, 3.5rem);
+}
+.hero-sub {
+  margin: 0.4rem 0 0;
+  max-width: 28rem;
+  font-size: 1.05rem;
+  color: #ddd6c8;
+}
+.hero-veil .btn-ghost {
+  background: transparent;
+  color: #F4F0E8 !important;
+  border-color: rgba(244,240,232,.35);
+}
+
 /* Before / after slider */
 .slider {
   position: relative; border-radius: 18px; overflow: hidden;
