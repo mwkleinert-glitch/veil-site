@@ -139,7 +139,18 @@ h3 { font-size: 1.25rem; }
 .hero-photo .slider {
   border-radius: 0;
   box-shadow: none;
-  aspect-ratio: 16 / 10;
+  aspect-ratio: 1168 / 784;
+}
+.slider-hint {
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0.55rem 0.9rem 0.85rem;
+  font-size: 0.72rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  font-weight: 600;
+  color: var(--sage);
 }
 
 /* Before / after slider */
