@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>TRUEGROUND — American-made tank covers</title>
-<meta name="description" content="TRUEGROUND landscape covers for propane tanks. Manufactured in the USA by Americans. Ships nationwide.">
+<meta name="description" content="TRUEGROUND tank wrap and matching shower-cap lid cover. Ships anywhere in the USA.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&family=Source+Sans+3:wght@400;600;700&display=swap" rel="stylesheet">
 <style>
@@ -13,96 +13,89 @@
 body{margin:0;background:var(--soil);color:var(--cream);font:17px/1.55 "Source Sans 3",system-ui,sans-serif}
 img{max-width:100%;display:block}a{color:var(--gold)}
 .wrap{width:min(var(--max),calc(100% - 32px));margin-inline:auto}
-header{position:sticky;top:0;background:rgba(28,36,24,.94);backdrop-filter:blur(10px);z-index:20;border-bottom:1px solid rgba(244,239,228,.12)}
+header{position:sticky;top:0;background:rgba(28,36,24,.94);z-index:20;border-bottom:1px solid rgba(244,239,228,.12)}
 .nav{height:64px;display:flex;align-items:center;justify-content:space-between}
 .brand{font-family:"Libre Baskerville",Georgia,serif;letter-spacing:.12em;text-decoration:none;color:var(--cream)}
 nav{display:flex;gap:1rem}nav a{color:var(--cream);text-decoration:none;font-size:.9rem}
 .menu{display:none;background:transparent;color:var(--cream);border:1px solid rgba(244,239,228,.3);padding:.35rem .65rem}
-.banner{background:var(--gold);color:var(--soil);text-align:center;font-weight:700;letter-spacing:.08em;text-transform:uppercase;font-size:.78rem;padding:.55rem 12px}
-h1,h2,h3{font-family:"Libre Baskerville",Georgia,serif;font-weight:400;line-height:1.15;margin:0 0 .7rem}
+h1,h2,h3{font-family:"Libre Baskerville",Georgia,serif;font-weight:400;line-height:1.15;margin:0 0 .5rem}
 h1{font-size:clamp(2.2rem,7vw,3.8rem)}
-.lede{color:#D8D1C2;max-width:34rem}
+.ship{letter-spacing:.1em;text-transform:uppercase;font-size:.82rem;color:var(--gold);font-weight:700;margin:.25rem 0 1rem}
+.lede{color:#D8D1C2;max-width:36rem}
 .btn{display:inline-flex;background:var(--gold);color:var(--soil)!important;text-decoration:none;padding:.75rem 1.15rem;font-weight:700;border:0;cursor:pointer}
-.hero-photo{margin:1.4rem 0 0} 
 .section{padding:2.6rem 0;border-top:1px solid rgba(244,239,228,.12)}
 .cards{display:grid;grid-template-columns:1fr 1fr 1fr;gap:1rem}
 .card{border:1px solid rgba(244,239,228,.16);padding:1.1rem;background:rgba(0,0,0,.15)}
 .price{font-size:1.8rem;color:var(--gold)}
-.pgrid{display:grid;grid-template-columns:repeat(3,1fr);gap:.6rem}
 .cream{background:var(--cream);color:var(--soil)}
-.cream .lede{color:#4A463E} .cream a{color:var(--leaf)}
+.cream .lede,.cream p{color:#3F3B34}
+.pair{display:grid;grid-template-columns:1fr 1fr;gap:.7rem}
 form{display:grid;gap:.7rem}input,select,textarea{width:100%;padding:.7rem;border:1px solid #C9C2B4;font:inherit}
 footer{padding:2rem 0 3.2rem;color:#C9C2B4;font-size:.88rem}
-@media(max-width:800px){.cards,.pgrid{grid-template-columns:1fr 1fr}nav{display:none}nav.open{display:flex;flex-direction:column;position:absolute;right:16px;top:64px;background:var(--soil);padding:1rem;border:1px solid rgba(244,239,228,.2)}.menu{display:block}}
-@media(max-width:520px){.cards{grid-template-columns:1fr}}
-.ok{border:1px solid var(--leaf);padding:1rem;background:#fff}
+@media(max-width:800px){.cards,.pair{grid-template-columns:1fr}nav{display:none}nav.open{display:flex;flex-direction:column;position:absolute;right:16px;top:64px;background:var(--soil);padding:1rem;border:1px solid rgba(244,239,228,.2)}.menu{display:block}}
+.ok{border:1px solid var(--leaf);padding:1rem;background:#fff;color:var(--soil)}
 </style>
 </head>
 <body>
-<div class="banner">Made in the United States of America by Americans · Ships to every state</div>
 <header><div class="wrap nav">
   <a class="brand" href="#top">TRUEGROUND</a>
   <button class="menu" data-menu type="button">Menu</button>
   <nav data-nav>
+    <a href="#lid">Lid</a>
     <a href="#covers">Covers</a>
-    <a href="#grounds">Grounds</a>
-    <a href="#made">Made here</a>
+    <a href="#about">About</a>
     <a href="#inquire">Inquire</a>
   </nav>
 </div></header>
 <main id="top">
   <section class="wrap" style="padding:2.2rem 0 0">
-    <h1>An American cover for an American tank.</h1>
-    <p class="lede">TRUEGROUND is a removable landscape cover for aboveground propane tanks. Built in the United States. Shipped to any address in the USA.</p>
+    <h1>TRUEGROUND</h1>
+    <p class="ship">We ship anywhere in the USA</p>
+    <p class="lede">A landscape wrap for the tank. A matching shower-cap cover for the lid. Lift the lid and the hardware is all there.</p>
     <p><a class="btn" href="#inquire">Get yours quoted</a></p>
-    <img class="hero-photo" src="../assets/hero-wrap.jpg" alt="TRUEGROUND cover on a propane tank">
+    <img src="../assets/tank-lid.jpg" alt="TRUEGROUND wrap and lid cap" style="margin-top:1.2rem">
   </section>
-  <section class="section" id="covers">
+  <section class="section" id="lid">
+    <div class="wrap">
+      <h2>The lid cover tucks under, like a shower cap.</h2>
+      <p class="lede">Lids are close in size and different in style. We do not cut a hole and hope it lines up. The cap cover stretches over the lid, elastic at the hem, then wraps underneath. Pull the lid up. Fill valve, regulator, the whole well — open as designed.</p>
+      <div class="pair" style="margin-top:1rem">
+        <img src="../assets/lid-closed.jpg" alt="Closed lid cover">
+        <img src="../assets/lid-open.jpg" alt="Lid open, valves exposed">
+      </div>
+      <img src="../assets/lid-elastic.jpg" alt="Elastic hem" style="margin-top:.7rem">
+    </div>
+  </section>
+  <section class="section cream" id="covers">
     <div class="wrap">
       <h2>The cover line</h2>
       <div class="cards">
-        <article class="card"><h3>Sleeve</h3><p class="price">$389</p><p>Finished fabric cover with a service flap. Kit about $145.</p></article>
-        <article class="card"><h3>Magnet</h3><p class="price">$649</p><p>Magnetic sheet for clean steel tanks. Off for inspection in seconds.</p></article>
-        <article class="card"><h3>Cast Film</h3><p class="price">$895</p><p>Printed film, special order, quoted from photos.</p></article>
-      </div>
-      <p class="lede" style="margin-top:1rem">Hero size is 500 gallon. Also 120, 250, 325, 850, and 1000. No weld. No drill.</p>
-    </div>
-  </section>
-  <section class="section cream" id="grounds">
-    <div class="wrap">
-      <h2>The ground, not a hunt pattern.</h2>
-      <p class="lede">Light birch, limestone, barn silver, prairie, winter bark, fieldstone. Dark camo is not in this catalog.</p>
-      <div class="pgrid" style="margin-top:1rem">
-        <img src="../assets/pattern-birch-woodland.jpg" alt="Birch">
-        <img src="../assets/pattern-limestone.jpg" alt="Limestone">
-        <img src="../assets/pattern-barn-silver.jpg" alt="Barn silver">
-        <img src="../assets/pattern-prairie-grass.jpg" alt="Prairie">
-        <img src="../assets/pattern-winter-birch.jpg" alt="Winter">
-        <img src="../assets/pattern-fieldstone.jpg" alt="Fieldstone">
+        <article class="card"><h3>Sleeve</h3><p class="price">$389</p><p>Finished fabric wrap and matching lid cap. Kit about $145.</p></article>
+        <article class="card"><h3>Magnet</h3><p class="price">$649</p><p>Magnetic sheet for clean steel. Lid still uses the elastic cap.</p></article>
+        <article class="card"><h3>Cast Film</h3><p class="price">$895</p><p>Printed film, special order. Lid cap included.</p></article>
       </div>
     </div>
   </section>
-  <section class="section" id="made">
+  <section class="section" id="about">
     <div class="wrap">
-      <h2>Made here. Shipped everywhere here.</h2>
-      <p class="lede">Every TRUEGROUND product is manufactured in the United States of America by Americans. We ship anywhere in the USA. The cover screens the tank. It does not insulate it, enclose it, or change code setbacks. Fill, relief, gauge, and the data plate stay usable.</p>
-      <img src="../assets/hero-bare.jpg" alt="Bare tank before cover" style="margin-top:1.2rem">
+      <h2>About</h2>
+      
+<p>Micah Kleinert grew up on a dairy farm in West Branch, Michigan. Hard work was not a slogan. It was the day.</p>
+<p>He ran his own small business in northern Michigan resort towns for more than 25 years. That stretch taught him how an idea becomes a product a customer will actually use.</p>
+<p>Taking the propane and refined fuels division manager seat at Ellsworth Farmers Exchange felt like a return to those childhood and young-teen roots. Getting back to the country atmosphere he grew up in is soul-cleansing work. He is proud of the values that farm taught him and would not trade them — especially now, while raising his own children.</p>
+<p>The covers are manufactured in the United States of America by Americans.</p>
+
     </div>
   </section>
   <section class="section cream" id="inquire">
-    <div class="wrap" style="display:grid;gap:1.4rem">
+    <div class="wrap" style="max-width:32rem">
       <h2>Tell us the tank.</h2>
       <div class="ok" data-ok hidden><strong>Saved on this device.</strong></div>
       <form data-inquire data-store="trueground-inquiries">
         <label>Name<input name="name" required></label>
         <label>Phone<input name="phone" required></label>
-        <label>Ship-to / site address<input name="address" required></label>
-        <label>Tank size
-          <select name="tank">
-            <option>500 gal</option><option>120 gal</option><option>250 gal</option>
-            <option>325 gal</option><option>850 gal</option><option>1000 gal</option>
-          </select>
-        </label>
+        <label>Site address<input name="address" required></label>
+        <label>Tank size<select name="tank"><option>500 gal</option><option>120 gal</option><option>250 gal</option><option>325 gal</option><option>850 gal</option><option>1000 gal</option></select></label>
         <button class="btn" type="submit">Send inquiry</button>
       </form>
     </div>
@@ -110,7 +103,6 @@ footer{padding:2rem 0 3.2rem;color:#C9C2B4;font-size:.88rem}
 </main>
 <footer><div class="wrap">
   <p>TRUEGROUND</p>
-  <p>Manufactured in the United States of America by Americans. Ships anywhere in the USA.</p>
   <p>U.S. Patent pending, App. No. 64/158,376, filed September 19, 2026. Intellectual property held by Micah Kleinert.</p>
   <p>Visual / weather screening only — not insulation, not a fire enclosure, and not a modification of the tank.</p>
   <p><a href="../index.html">All three brand options</a></p>

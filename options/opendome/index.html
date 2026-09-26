@@ -3,12 +3,12 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>OPENDOME — Cover the shell. Leave the hardware.</title>
-<meta name="description" content="Service-first removable covers for aboveground LPG tanks. Made in the USA. Ships nationwide.">
+<title>OPENDOME — Cover the shell. Lift the lid.</title>
+<meta name="description" content="Removable tank wrap plus elastic shower-cap lid cover. Ships anywhere in the USA.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;600&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
 <style>
-:root{--bg:#F7F6F2;--ink:#0B0B0B;--mute:#4A4A46;--line:#D7D4CC;--hi:#C9A227;--max:1120px}
+:root{--bg:#F7F6F2;--ink:#0B0B0B;--mute:#4A4A46;--line:#D7D4CC;--max:1120px}
 *{box-sizing:border-box}html{scroll-behavior:smooth}
 body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.5 "IBM Plex Sans",system-ui,sans-serif}
 img{max-width:100%;display:block}a{color:var(--ink)}
@@ -18,130 +18,97 @@ header{position:sticky;top:0;background:#fff;border-bottom:2px solid var(--ink);
 .brand{font-family:"IBM Plex Mono",monospace;font-weight:600;letter-spacing:.08em;text-decoration:none}
 nav{display:flex;gap:1rem}nav a{text-decoration:none;font-size:.86rem}
 .menu{display:none;background:#fff;border:2px solid var(--ink);padding:.35rem .6rem;font:inherit}
-.flag{background:var(--ink);color:#fff;font-family:"IBM Plex Mono",monospace;font-size:.72rem;letter-spacing:.08em;padding:.55rem 0;text-align:center}
-h1{font-size:clamp(2rem,7vw,3.4rem);letter-spacing:-.03em;margin:0 0 .6rem;line-height:1.05}
+.ship{font-family:"IBM Plex Mono",monospace;font-size:.78rem;letter-spacing:.06em;text-transform:uppercase;margin:.2rem 0 1rem}
+h1{font-size:clamp(2rem,7vw,3.4rem);letter-spacing:-.03em;margin:0 0 .4rem;line-height:1.05}
 h2{font-size:clamp(1.4rem,3vw,2rem);margin:0 0 .6rem}
-.lede{color:var(--mute);max-width:38rem}
+.lede{color:var(--mute);max-width:40rem}
 .btn{display:inline-flex;background:var(--ink);color:#fff;text-decoration:none;padding:.7rem 1rem;font-weight:600;border:0;cursor:pointer}
-.hero{display:grid;grid-template-columns:1fr 1fr;min-height:70vh}
-.hero .copy{padding:2rem 8vw;display:flex;flex-direction:column;justify-content:center}
-.hero img{width:100%;height:100%;object-fit:cover}
-table{width:100%;border-collapse:collapse;font-size:.95rem}
-th,td{border-bottom:1px solid var(--line);padding:.65rem .4rem;text-align:left;vertical-align:top}
+table{width:100%;border-collapse:collapse}th,td{border-bottom:1px solid var(--line);padding:.65rem .4rem;text-align:left;vertical-align:top}
 th{font-family:"IBM Plex Mono",monospace;font-size:.72rem;letter-spacing:.06em;text-transform:uppercase}
 .section{padding:2.4rem 0;border-top:2px solid var(--ink)}
 .grid{display:grid;gap:1rem;grid-template-columns:1fr 1fr}
-.chip{font-family:"IBM Plex Mono",monospace;font-size:.72rem;border:1px solid var(--ink);display:inline-block;padding:.15rem .4rem;margin:0 .25rem .25rem 0}
-.pgrid{display:grid;grid-template-columns:repeat(3,1fr);gap:2px}
 form{display:grid;gap:.65rem}input,select,textarea{width:100%;padding:.65rem;border:2px solid var(--ink);font:inherit;background:#fff}
 footer{background:var(--ink);color:#E8E4DA;padding:2rem 0 3rem;font-size:.88rem}
 footer a{color:#fff}
-@media(max-width:800px){.hero,.grid{grid-template-columns:1fr}.pgrid{grid-template-columns:1fr 1fr}nav{display:none}nav.open{display:flex;flex-direction:column;position:absolute;right:12px;top:60px;background:#fff;border:2px solid var(--ink);padding:.8rem}.menu{display:block}}
+@media(max-width:800px){.grid{grid-template-columns:1fr}nav{display:none}nav.open{display:flex;flex-direction:column;position:absolute;right:12px;top:60px;background:#fff;border:2px solid var(--ink);padding:.8rem}.menu{display:block}}
 .ok{border:2px solid var(--ink);padding:1rem;background:#fff}
 </style>
 </head>
 <body>
-<div class="flag">MANUFACTURED IN THE UNITED STATES OF AMERICA BY AMERICANS · SHIPS ANYWHERE IN THE USA</div>
 <header><div class="wrap nav">
   <a class="brand" href="#top">OPENDOME</a>
   <button class="menu" data-menu type="button">Menu</button>
   <nav data-nav>
+    <a href="#lid">Lid</a>
     <a href="#spec">Spec</a>
-    <a href="#sku">SKU</a>
-    <a href="#access">Access</a>
+    <a href="#about">About</a>
     <a href="#inquire">Inquire</a>
   </nav>
 </div></header>
 <main id="top">
-  <section class="hero">
-    <div class="copy">
-      <p class="lede" style="font-family:IBM Plex Mono,monospace;font-size:.78rem;letter-spacing:.08em;text-transform:uppercase">Aboveground ASME LPG · removable cover</p>
-      <h1>Cover the shell. Leave the hardware.</h1>
-      <p class="lede">OPENDOME is a service-first landscape cover. The wrap comes off. The tank stays a tank. If fill day fails, the cover fails.</p>
-      <p><a class="btn" href="#inquire">Start a quote</a></p>
+  <section class="wrap" style="padding:2rem 0 0">
+    <h1>OPENDOME</h1>
+    <p class="ship">We ship anywhere in the USA</p>
+    <p class="lede">Cover the shell. Cover the lid like a shower cap. Lift the lid and every valve is there — no window cut in the cap.</p>
+    <p><a class="btn" href="#inquire">Start a quote</a></p>
+    <img src="../assets/tank-lid.jpg" alt="Wrapped tank and matching lid cap" style="margin-top:1.2rem;border:2px solid var(--ink)">
+  </section>
+  <section class="section" id="lid">
+    <div class="wrap grid">
+      <div>
+        <h2>Lid cover</h2>
+        <p class="lede">Lid styles differ. A fixed hole does not. OPENDOME uses an elastic hem that stretches over the cap and tucks under the rim. Same motion as a shower cap.</p>
+        <p class="lede">The lid still opens all the way. Fill, regulator, and gauge sit in the open well. The cover rides on the lid and comes up with it.</p>
+      </div>
+      <div>
+        <img src="../assets/lid-closed.jpg" alt="Closed elastic lid cover" style="border:2px solid var(--ink);margin-bottom:.6rem">
+        <img src="../assets/lid-open.jpg" alt="Open lid, hardware exposed" style="border:2px solid var(--ink)">
+      </div>
     </div>
-    <img src="../assets/hero-wrap.jpg" alt="Covered tank with open service dome">
+    <div class="wrap" style="margin-top:1rem">
+      <img src="../assets/lid-elastic.jpg" alt="Elastic band detail" style="border:2px solid var(--ink);max-width:520px">
+    </div>
   </section>
   <section class="section" id="spec">
     <div class="wrap">
-      <h2>Specification</h2>
+      <h2>Spec</h2>
       <table>
-        <tr><th>Job</th><td>Removable visual / weather screening</td></tr>
-        <tr><th>Not</th><td>Insulation, fire enclosure, building, setback change, tank modification</td></tr>
-        <tr><th>Attach</th><td>No weld / no drill</td></tr>
-        <tr><th>Must stay clear</th><td>PRV, fill, gauge, manufacturer data plate, walk-up path</td></tr>
-        <tr><th>Pattern policy</th><td>Light-value only. No dark hunting camo.</td></tr>
-        <tr><th>Ship</th><td>Anywhere in the United States</td></tr>
-        <tr><th>Origin</th><td>Manufactured in the United States of America by Americans</td></tr>
-        <tr><th>IP</th><td>U.S. Patent pending, App. No. 64/158,376, filed September 19, 2026</td></tr>
+        <tr><th>Tank wrap</th><td>Removable visual / weather screening. No weld / no drill.</td></tr>
+        <tr><th>Lid cover</th><td>Shower-cap fit. Elastic hem. Stretches over varying lid sizes and styles.</td></tr>
+        <tr><th>Open</th><td>Lift the lid. Hardware fully exposed. No cutout left in the cap.</td></tr>
+        <tr><th>Not</th><td>Insulation, fire enclosure, tank modification.</td></tr>
+        <tr><th>SKU 500-gal</th><td>Sleeve ~$389 (kit ~$145) · Magnet ~$649 · Cast Film ~$895</td></tr>
+        <tr><th>Sizes</th><td>120 V/H, 250, 325, 500, 850, 1000</td></tr>
       </table>
     </div>
   </section>
-  <section class="section" id="sku">
+  <section class="section" id="about">
     <div class="wrap">
-      <h2>SKU ladder · 500-gal hero</h2>
-      <table>
-        <tr><th>SKU</th><th>Retail</th><th>Notes</th></tr>
-        <tr><td>Sleeve</td><td>~$389</td><td>Default. Outdoor fabric + service flap. Kit ~$145.</td></tr>
-        <tr><td>Magnet</td><td>~$649</td><td>Clean ferrous shells only.</td></tr>
-        <tr><td>Cast Film</td><td>~$895</td><td>Special order. Quoted from shell photos.</td></tr>
-      </table>
-      <p style="margin-top:1rem">
-        <span class="chip">120 V/H</span><span class="chip">250</span><span class="chip">325</span>
-        <span class="chip">500 hero</span><span class="chip">850</span><span class="chip">1000</span>
-      </p>
-      <p class="lede">Other sizes quoted. Prices are indicative retail, not a binding quote.</p>
-    </div>
-  </section>
-  <section class="section" id="access">
-    <div class="wrap grid">
-      <div>
-        <h2>Access is the product.</h2>
-        <p class="lede">A closed cover that fights the driver is a rejected cover. OPENDOME is cut so the working parts stay the working parts.</p>
-        <img src="../assets/service.jpg" alt="Hardware left open" style="margin-top:1rem;border:2px solid var(--ink)">
-      </div>
-      <div>
-        <h2>Grounds</h2>
-        <div class="pgrid">
-          <img src="../assets/pattern-birch-woodland.jpg" alt="Birch">
-          <img src="../assets/pattern-limestone.jpg" alt="Limestone">
-          <img src="../assets/pattern-barn-silver.jpg" alt="Barn silver">
-          <img src="../assets/pattern-prairie-grass.jpg" alt="Prairie">
-          <img src="../assets/pattern-winter-birch.jpg" alt="Winter">
-          <img src="../assets/pattern-fieldstone.jpg" alt="Fieldstone">
-        </div>
-      </div>
+      <h2>About</h2>
+      
+<p>Micah Kleinert grew up on a dairy farm in West Branch, Michigan. Hard work was not a slogan. It was the day.</p>
+<p>He ran his own small business in northern Michigan resort towns for more than 25 years. That stretch taught him how an idea becomes a product a customer will actually use.</p>
+<p>Taking the propane and refined fuels division manager seat at Ellsworth Farmers Exchange felt like a return to those childhood and young-teen roots. Getting back to the country atmosphere he grew up in is soul-cleansing work. He is proud of the values that farm taught him and would not trade them — especially now, while raising his own children.</p>
+<p>The covers are manufactured in the United States of America by Americans.</p>
+
     </div>
   </section>
   <section class="section" id="inquire">
-    <div class="wrap grid">
-      <div>
-        <h2>Inquire</h2>
-        <div class="ok" data-ok hidden><strong>Saved on this device.</strong></div>
-        <form data-inquire data-store="opendome-inquiries">
-          <label>Name<input name="name" required></label>
-          <label>Phone<input name="phone" required></label>
-          <label>Site address<input name="address" required></label>
-          <label>Tank size
-            <select name="tank">
-              <option>500 gal</option><option>120 gal</option><option>250 gal</option>
-              <option>325 gal</option><option>850 gal</option><option>1000 gal</option>
-            </select>
-          </label>
-          <label>Notes<textarea name="notes"></textarea></label>
-          <button class="btn" type="submit">Send</button>
-        </form>
-      </div>
-      <div>
-        <h2>Prior art note</h2>
-        <p class="lede">U.S. Patent 7,731,052 describes a camouflaging and insulating cover. OPENDOME is specified as non-insulating screening so the vessel can still exchange heat with outdoor air.</p>
-      </div>
+    <div class="wrap" style="max-width:32rem">
+      <h2>Inquire</h2>
+      <div class="ok" data-ok hidden><strong>Saved on this device.</strong></div>
+      <form data-inquire data-store="opendome-inquiries">
+        <label>Name<input name="name" required></label>
+        <label>Phone<input name="phone" required></label>
+        <label>Site address<input name="address" required></label>
+        <label>Tank size<select name="tank"><option>500 gal</option><option>120 gal</option><option>250 gal</option><option>325 gal</option><option>850 gal</option><option>1000 gal</option></select></label>
+        <button class="btn" type="submit">Send</button>
+      </form>
     </div>
   </section>
 </main>
 <footer><div class="wrap">
   <p>OPENDOME</p>
-  <p>Ships anywhere in the United States. Manufactured in the United States of America by Americans.</p>
   <p>U.S. Patent pending, App. No. 64/158,376, filed September 19, 2026. Intellectual property held by Micah Kleinert.</p>
   <p><a href="../index.html">All three brand options</a></p>
 </div></footer>
