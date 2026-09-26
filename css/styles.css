@@ -122,23 +122,13 @@ h3 { font-size: 1.25rem; }
 }
 .hero-photo {
   position: static;
-  background: var(--bark);
+  background: var(--paper);
   line-height: 0;
 }
 .hero-photo > img {
   width: 100%;
   height: auto;
   display: block;
-  aspect-ratio: 4 / 3;
-  object-fit: cover;
-  /* Tank body, wrapped dome, and nearby birch trunks sit low in the frame. */
-  object-position: 46% 70%;
-}
-@media (min-width: 880px) {
-  .hero-photo > img {
-    aspect-ratio: 16 / 9;
-    object-position: 48% 64%;
-  }
 }
 
 /* Before / after slider */
