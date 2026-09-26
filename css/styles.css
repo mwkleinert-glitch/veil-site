@@ -13,7 +13,7 @@
   --line: rgba(26, 25, 22, 0.12);
   --shadow: 0 18px 40px rgba(44, 40, 36, 0.12);
   --max: 1120px;
-  --nav-h: 64px;
+  --nav-h: 92px;
   --serif: "Fraunces", "Iowan Old Style", Georgia, serif;
   --sans: "Source Sans 3", "Segoe UI", system-ui, sans-serif;
 }
@@ -54,18 +54,27 @@ h3 { font-size: 1.25rem; }
   border-bottom: 1px solid var(--line);
 }
 .nav {
-  height: 76px;
+  min-height: var(--nav-h);
+  height: auto;
+  padding: 0.55rem 0;
   display: flex; align-items: center; justify-content: space-between; gap: 1rem;
 }
-.brand { display: flex; align-items: baseline; gap: 0.45rem; text-decoration: none; color: var(--sage); }
+.brand { display: flex; align-items: baseline; gap: 0.55rem; text-decoration: none; }
 .brand-mark {
   font-family: var(--serif);
-  font-size: 2.15rem;
-  letter-spacing: 0.2em;
-  color: var(--sage);
+  font-size: clamp(2.6rem, 11vw, 4.2rem);
+  line-height: 0.9;
+  letter-spacing: 0.14em;
+  color: #3F5340 !important;
   font-weight: 600;
 }
-.brand-by { font-size: 0.72rem; letter-spacing: 0.08em; color: var(--ink-soft); text-transform: uppercase; }
+.brand-by {
+  font-size: 0.78rem;
+  letter-spacing: 0.12em;
+  color: #3F5340;
+  text-transform: uppercase;
+  font-weight: 600;
+}
 .nav-links { display: flex; gap: 1.1rem; align-items: center; }
 .nav-links a { text-decoration: none; color: var(--ink-soft); font-size: 0.92rem; }
 .nav-links a[aria-current="page"] { color: var(--ink); font-weight: 600; }
@@ -127,10 +136,10 @@ h3 { font-size: 1.25rem; }
   background: var(--paper);
   line-height: 0;
 }
-.hero-photo > img {
-  width: 100%;
-  height: auto;
-  display: block;
+.hero-photo .slider {
+  border-radius: 0;
+  box-shadow: none;
+  aspect-ratio: 16 / 10;
 }
 
 /* Before / after slider */
