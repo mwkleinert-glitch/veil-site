@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>TRUEGROUND — Handmade tank covers</title>
+<meta name="description" content="TRUEGROUND landscape covers. Handmade in the USA with marine-grade Sunbrella. Ships anywhere in the USA.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&family=Source+Sans+3:wght@400;600;700&display=swap" rel="stylesheet">
+<style>
+:root{--soil:#1C2418;--cream:#F4EFE4;--gold:#C4A35A;--max:1040px}
+*{box-sizing:border-box}html{scroll-behavior:smooth}
+body{margin:0;background:var(--soil);color:var(--cream);font:17px/1.55 "Source Sans 3",system-ui,sans-serif}
+img{max-width:100%;display:block}a{color:var(--gold)}
+.wrap{width:min(var(--max),calc(100% - 32px));margin-inline:auto}
+header{position:sticky;top:0;background:rgba(28,36,24,.94);z-index:20;border-bottom:1px solid rgba(244,239,228,.12)}
+.nav{height:64px;display:flex;align-items:center;justify-content:space-between}
+.brand{font-family:"Libre Baskerville",Georgia,serif;letter-spacing:.12em;text-decoration:none;color:var(--cream)}
+nav{display:flex;gap:1rem}nav a{color:var(--cream);text-decoration:none;font-size:.9rem}
+.menu{display:none;background:transparent;color:var(--cream);border:1px solid rgba(244,239,228,.3);padding:.35rem .65rem}
+h1,h2,h3{font-family:"Libre Baskerville",Georgia,serif;font-weight:400;line-height:1.15;margin:0 0 .5rem}
+h1{font-size:clamp(2.2rem,7vw,3.8rem)}
+.ship{letter-spacing:.1em;text-transform:uppercase;font-size:.82rem;color:var(--gold);font-weight:700;margin:.25rem 0 1rem}
+.lede{color:#D8D1C2;max-width:38rem}
+.btn{display:inline-flex;background:var(--gold);color:var(--soil)!important;text-decoration:none;padding:.75rem 1.15rem;font-weight:700;border:0;cursor:pointer}
+.section{padding:2.6rem 0;border-top:1px solid rgba(244,239,228,.12)}
+.cards{display:grid;grid-template-columns:1fr 1fr 1fr;gap:1rem}
+.card{border:1px solid rgba(244,239,228,.16);padding:1.1rem;background:rgba(0,0,0,.15)}
+.price{font-size:1.8rem;color:var(--gold)}
+.cream{background:var(--cream);color:var(--soil)}
+.cream p{color:#3F3B34}
+form{display:grid;gap:.7rem}input,select{width:100%;padding:.7rem;border:1px solid #C9C2B4;font:inherit}
+footer{padding:2rem 0 3.2rem;color:#C9C2B4;font-size:.88rem}
+@media(max-width:800px){.cards{grid-template-columns:1fr}nav{display:none}nav.open{display:flex;flex-direction:column;position:absolute;right:16px;top:64px;background:var(--soil);padding:1rem;border:1px solid rgba(244,239,228,.2)}.menu{display:block}}
+.ok{border:1px solid #3E5A34;padding:1rem;background:#fff;color:var(--soil)}
+</style>
+</head>
+<body>
+<header><div class="wrap nav">
+  <a class="brand" href="#top">TRUEGROUND</a>
+  <button class="menu" data-menu type="button">Menu</button>
+  <nav data-nav>
+    <a href="#covers">Covers</a>
+    <a href="#about">About</a>
+    <a href="#inquire">Inquire</a>
+  </nav>
+</div></header>
+<main id="top">
+  <section class="wrap" style="padding:2.2rem 0 0">
+    <h1>TRUEGROUND</h1>
+    <p class="ship">We ship anywhere in the USA</p>
+    <p class="lede">Handmade landscape covers for aboveground propane tanks. The lid stays fully functional without removing any material.</p>
+    <p><a class="btn" href="#inquire">Request a quote</a></p>
+    <img src="../assets/tank-lid.jpg" alt="500-gallon propane tank with landscape cover" style="margin-top:1.2rem">
+  </section>
+  <section class="section" id="covers">
+    <div class="wrap">
+      <h2>The cover line</h2>
+      <div class="cards">
+        <article class="card"><h3>Sleeve</h3><p class="price">$389</p><p>Finished fabric wrap. Kit about $145.</p></article>
+        <article class="card"><h3>Magnet</h3><p class="price">$649</p><p>Magnetic sheet for clean steel.</p></article>
+        <article class="card"><h3>Cast Film</h3><p class="price">$895</p><p>Printed film, special order.</p></article>
+      </div>
+    </div>
+  </section>
+  <section class="section cream" id="about">
+    <div class="wrap">
+      <h2>About</h2>
+      
+<p>Micah Kleinert grew up on a dairy farm in West Branch, Michigan. Hard work was not a slogan. It was the day.</p>
+<p>He operated his own small business in northern Michigan resort towns for more than 25 years. That work is how an idea becomes a finished product a customer can use.</p>
+<p>The propane and refined fuels division manager role at Ellsworth Farmers Exchange is a return to those childhood and young-teen roots. The country atmosphere he grew up in is the same atmosphere he wants his own children to know. The values that farm taught him still hold.</p>
+<p>Every cover is handmade in the USA using high-quality marine-grade Sunbrella and other canvas materials.</p>
+
+    </div>
+  </section>
+  <section class="section" id="inquire">
+    <div class="wrap" style="max-width:32rem">
+      <h2>Inquire</h2>
+      <div class="ok" data-ok hidden><strong>Received on this device.</strong></div>
+      <form data-inquire data-store="trueground-inquiries">
+        <label>Name<input name="name" required></label>
+        <label>Phone<input name="phone" required></label>
+        <label>Site address<input name="address" required></label>
+        <label>Tank size<select name="tank"><option>500 gal</option><option>120 gal</option><option>250 gal</option><option>325 gal</option><option>850 gal</option><option>1000 gal</option></select></label>
+        <button class="btn" type="submit">Send inquiry</button>
+      </form>
+    </div>
+  </section>
+</main>
+<footer><div class="wrap">
+  <p>TRUEGROUND</p>
+  <p>U.S. Patent pending, App. No. 64/158,376, filed September 19, 2026. Intellectual property held by Micah Kleinert.</p>
+  <p>Visual and weather screening only — not insulation, not a fire enclosure, and not a modification of the tank.</p>
+  <p><a href="../index.html">All three brand options</a></p>
+</div></footer>
+<script>
+(function(){
+  const t=document.querySelector('[data-menu]');
+  const n=document.querySelector('[data-nav]');
+  if(t&&n){t.onclick=()=>{const o=n.classList.toggle('open');t.setAttribute('aria-expanded',o?'true':'false');};}
+  const form=document.querySelector('[data-inquire]');
+  if(!form) return;
+  form.addEventListener('submit',function(e){
+    e.preventDefault();
+    const d=Object.fromEntries(new FormData(form).entries());
+    try{
+      const k=form.getAttribute('data-store')||'inquiries';
+      const arr=JSON.parse(localStorage.getItem(k)||'[]');
+      arr.push({...d,at:new Date().toISOString()});
+      localStorage.setItem(k,JSON.stringify(arr));
+    }catch(err){}
+    form.hidden=true;
+    const ok=document.querySelector('[data-ok]');
+    if(ok) ok.hidden=false;
+  });
+})();
+</script>
+</body></html>
