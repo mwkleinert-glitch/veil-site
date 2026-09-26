@@ -95,11 +95,35 @@ h3 { font-size: 1.25rem; }
 .hero-copy p { color: var(--ink-soft); }
 .hero-actions { display: flex; flex-wrap: wrap; gap: 0.7rem; margin-top: 1.2rem; }
 
-.hero-bleed { padding: 0 0 0; }
+/* Copy sits on paper. The photograph is its own full-bleed block — never a text overlay. */
+.hero-bleed { padding: 0; background: var(--paper); }
+.hero-veil {
+  position: static;
+  padding: 1.7rem 0 1.45rem;
+  background: var(--paper);
+  color: var(--ink);
+}
+.hero-veil .eyebrow { color: var(--sage); }
+.hero-veil h1 {
+  color: var(--ink);
+  max-width: 14ch;
+  font-size: clamp(2.15rem, 6.2vw, 3.65rem);
+}
+.hero-sub {
+  margin: 0.35rem 0 0;
+  max-width: 34rem;
+  font-size: 1.08rem;
+  color: var(--ink-soft);
+}
+.hero-veil .btn-ghost {
+  background: transparent;
+  color: var(--ink);
+  border-color: var(--line);
+}
 .hero-photo {
-  position: relative;
-  min-height: 0;
-  background: #1a1916;
+  position: static;
+  background: var(--bark);
+  line-height: 0;
 }
 .hero-photo > img {
   width: 100%;
@@ -107,53 +131,14 @@ h3 { font-size: 1.25rem; }
   display: block;
   aspect-ratio: 4 / 3;
   object-fit: cover;
-  object-position: 38% 48%;
-}
-.hero-veil {
-  position: relative;
-  padding: 1.15rem 1.1rem 1.4rem;
-  background: var(--paper);
-  color: var(--ink);
-  max-width: none;
-}
-.hero-veil .eyebrow { color: var(--sage) !important; }
-.hero-veil h1 { color: var(--ink) !important; max-width: 16ch; }
-.hero-sub { color: var(--ink-soft) !important; }
-.hero-veil .btn-ghost {
-  background: transparent;
-  color: var(--ink) !important;
-  border-color: var(--line);
+  /* Tank body, wrapped dome, and nearby birch trunks sit low in the frame. */
+  object-position: 46% 70%;
 }
 @media (min-width: 880px) {
-  .hero-photo > img { aspect-ratio: 16 / 9; object-position: 40% 50%; }
-  .hero-veil {
-    position: absolute;
-    left: 0; right: 0; bottom: 0;
-    padding: clamp(1.4rem, 4vw, 2.6rem) max(16px, calc((100% - var(--max)) / 2));
-    background: linear-gradient(transparent, rgba(26,25,22,.82) 50%);
-    color: #F4F0E8;
+  .hero-photo > img {
+    aspect-ratio: 16 / 9;
+    object-position: 48% 64%;
   }
-  .hero-veil .eyebrow { color: #c9d4c4 !important; }
-  .hero-veil h1 { color: #F4F0E8 !important; }
-  .hero-sub { color: #ddd6c8 !important; }
-  .hero-veil .btn-ghost { color: #F4F0E8 !important; border-color: rgba(244,240,232,.35); }
-}
-.hero-veil .eyebrow { color: #c9d4c4; }
-.hero-veil h1 {
-  color: #F4F0E8;
-  max-width: 16ch;
-  font-size: clamp(2rem, 6.4vw, 3.5rem);
-}
-.hero-sub {
-  margin: 0.4rem 0 0;
-  max-width: 28rem;
-  font-size: 1.05rem;
-  color: #ddd6c8;
-}
-.hero-veil .btn-ghost {
-  background: transparent;
-  color: #F4F0E8 !important;
-  border-color: rgba(244,240,232,.35);
 }
 
 /* Before / after slider */
