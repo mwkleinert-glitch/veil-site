@@ -16,7 +16,7 @@ img{max-width:100%;display:block}a{color:var(--accent)}
 header{position:sticky;top:0;z-index:20;background:rgba(243,238,228,.92);backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}
 .nav{height:64px;display:flex;align-items:center;justify-content:space-between}
 .brand{letter-spacing:.22em;font-weight:600;text-decoration:none;color:var(--ink);font-size:.92rem}
-nav{display:flex;gap:1rem;align-items:center}nav a{color:var(--mute);text-decoration:none;font-size:.9rem}
+nav{display:flex;gap:1rem}nav a{color:var(--mute);text-decoration:none;font-size:.9rem}
 .menu{display:none;background:none;border:1px solid var(--line);padding:.4rem .7rem;border-radius:999px}
 .btn{display:inline-flex;background:var(--ink);color:#F3EEE4!important;text-decoration:none;padding:.75rem 1.15rem;border-radius:999px;font-weight:600;border:0;cursor:pointer}
 .hero{padding:2.2rem 0 1rem}
@@ -24,17 +24,16 @@ h1,h2,h3{font-family:"Cormorant Garamond",Georgia,serif;font-weight:500;line-hei
 h1{font-size:clamp(2.4rem,8vw,4.4rem)}h2{font-size:clamp(1.8rem,4vw,2.6rem)}
 .ship{margin:.35rem 0 1rem;font-size:.86rem;letter-spacing:.08em;text-transform:uppercase;color:var(--accent);font-weight:600}
 .lede{color:var(--mute);font-size:1.08rem;max-width:40rem}
-.grid{display:grid;gap:1rem}.g3{grid-template-columns:1fr 1fr 1fr}
-@media(max-width:800px){.g3,.pair{grid-template-columns:1fr}nav{display:none}nav.open{display:flex;flex-direction:column;position:absolute;right:16px;top:64px;background:var(--paper);padding:1rem;border:1px solid var(--line)}.menu{display:block}}
-.card{background:#fff;border:1px solid var(--line);padding:1.1rem 1.15rem}
+.g3{display:grid;gap:1rem;grid-template-columns:1fr 1fr 1fr}
+@media(max-width:800px){.g3{grid-template-columns:1fr}nav{display:none}nav.open{display:flex;flex-direction:column;position:absolute;right:16px;top:64px;background:var(--paper);padding:1rem;border:1px solid var(--line)}.menu{display:block}}
+.card{background:#fff;border:1px solid var(--line);padding:1.1rem}
 .price{font-family:"Cormorant Garamond",serif;font-size:2rem}
 .muted{color:var(--mute)}
 .section{padding:2.4rem 0;border-top:1px solid var(--line)}
-.pair{display:grid;grid-template-columns:1fr 1fr;gap:.7rem}
 .pgrid{display:grid;grid-template-columns:repeat(3,1fr);gap:.7rem}
 @media(max-width:700px){.pgrid{grid-template-columns:1fr 1fr}}
 form{display:grid;gap:.7rem}label{font-size:.8rem;letter-spacing:.08em;text-transform:uppercase}
-input,select,textarea{width:100%;padding:.7rem;border:1px solid var(--line);background:#fff;font:inherit}
+input,select{width:100%;padding:.7rem;border:1px solid var(--line);background:#fff;font:inherit}
 footer{padding:2rem 0 3rem;color:var(--mute);font-size:.88rem;border-top:1px solid var(--line)}
 .ok{background:#fff;border:1px solid var(--line);padding:1rem}
 .about p{max-width:40rem}
@@ -45,7 +44,7 @@ footer{padding:2rem 0 3rem;color:var(--mute);font-size:.88rem;border-top:1px sol
   <a class="brand" href="#top">SIGHTLINE</a>
   <button class="menu" data-menu type="button">Menu</button>
   <nav data-nav>
-    <a href="#system">The cover</a>
+    <a href="#systems">Systems</a>
     <a href="#about">About</a>
     <a href="#inquire">Inquire</a>
   </nav>
@@ -55,25 +54,21 @@ footer{padding:2rem 0 3rem;color:var(--mute);font-size:.88rem;border-top:1px sol
     <div class="wrap">
       <h1>SIGHTLINE</h1>
       <p class="ship">We ship anywhere in the USA</p>
-      <p class="lede">Removable landscape covers for aboveground ASME propane tanks. The lid cover matches the tank wrap so the installation reads as a single surface. The lid remains fully operational without removing anything.</p>
+      <p class="lede">Removable landscape covers for aboveground ASME propane tanks. The lid stays fully functional without removing any material.</p>
       <p style="margin:1.1rem 0 0"><a class="btn" href="#inquire">Request a cover</a></p>
     </div>
     <div class="wrap" style="margin-top:1.4rem">
-      <img src="../assets/tank-lid.jpg" alt="Landscape cover on tank and lid">
+      <img src="../assets/tank-lid.jpg" alt="500-gallon propane tank with landscape cover">
     </div>
   </section>
-  <section class="section" id="system">
+  <section class="section" id="systems">
     <div class="wrap">
-      <h2>Tank and lid, one finish.</h2>
-      <p class="lede">The wrap and the lid cover are two pieces, cut from the same ground. Closed, they read as one. The lid remains fully operational without removing anything.</p>
-      <div class="pair" style="margin-top:1.2rem">
-        <img src="../assets/lid-closed.jpg" alt="Lid cover closed">
-        <img src="../assets/lid-open.jpg" alt="Lid open, service hardware accessible">
-      </div>
-      <div class="grid g3" style="margin-top:1.6rem">
-        <article class="card"><h3>Sleeve</h3><p class="price">$389</p><p class="muted">Outdoor fabric sleeve with matching lid cover. Kit path about $145.</p></article>
-        <article class="card"><h3>Magnet</h3><p class="price">$649</p><p class="muted">Magnetic sheet on a clean ferrous shell, with matching lid cover.</p></article>
-        <article class="card"><h3>Cast Film</h3><p class="price">$895</p><p class="muted">Printed cast film. Quoted from shell photos. Lid cover included.</p></article>
+      <h2>Three systems. One hero size.</h2>
+      <p class="lede">Indicative retail on a 500-gallon tank. Other sizes quoted. No weld. No drill.</p>
+      <div class="g3" style="margin-top:1.2rem">
+        <article class="card"><h3>Sleeve</h3><p class="price">$389</p><p class="muted">Outdoor fabric sleeve. Kit path about $145.</p></article>
+        <article class="card"><h3>Magnet</h3><p class="price">$649</p><p class="muted">Magnetic sheet on a clean ferrous shell.</p></article>
+        <article class="card"><h3>Cast Film</h3><p class="price">$895</p><p class="muted">Printed cast film. Quoted from shell photos.</p></article>
       </div>
       <p class="muted" style="margin-top:1rem">Sizes: 120 V/H, 250, 325, 500, 850, 1000 gallon. Light-value grounds only.</p>
       <div class="pgrid" style="margin-top:1rem">

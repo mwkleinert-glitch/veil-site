@@ -28,11 +28,10 @@ h1{font-size:clamp(2.2rem,7vw,3.8rem)}
 .card{border:1px solid rgba(244,239,228,.16);padding:1.1rem;background:rgba(0,0,0,.15)}
 .price{font-size:1.8rem;color:var(--gold)}
 .cream{background:var(--cream);color:var(--soil)}
-.cream .lede,.cream p{color:#3F3B34}
-.pair{display:grid;grid-template-columns:1fr 1fr;gap:.7rem}
-form{display:grid;gap:.7rem}input,select,textarea{width:100%;padding:.7rem;border:1px solid #C9C2B4;font:inherit}
+.cream p{color:#3F3B34}
+form{display:grid;gap:.7rem}input,select{width:100%;padding:.7rem;border:1px solid #C9C2B4;font:inherit}
 footer{padding:2rem 0 3.2rem;color:#C9C2B4;font-size:.88rem}
-@media(max-width:800px){.cards,.pair{grid-template-columns:1fr}nav{display:none}nav.open{display:flex;flex-direction:column;position:absolute;right:16px;top:64px;background:var(--soil);padding:1rem;border:1px solid rgba(244,239,228,.2)}.menu{display:block}}
+@media(max-width:800px){.cards{grid-template-columns:1fr}nav{display:none}nav.open{display:flex;flex-direction:column;position:absolute;right:16px;top:64px;background:var(--soil);padding:1rem;border:1px solid rgba(244,239,228,.2)}.menu{display:block}}
 .ok{border:1px solid #3E5A34;padding:1rem;background:#fff;color:var(--soil)}
 </style>
 </head>
@@ -50,22 +49,17 @@ footer{padding:2rem 0 3.2rem;color:#C9C2B4;font-size:.88rem}
   <section class="wrap" style="padding:2.2rem 0 0">
     <h1>TRUEGROUND</h1>
     <p class="ship">We ship anywhere in the USA</p>
-    <p class="lede">Handmade landscape covers for aboveground propane tanks. The lid cover matches the tank wrap. The lid remains fully operational without removing anything.</p>
+    <p class="lede">Handmade landscape covers for aboveground propane tanks. The lid stays fully functional without removing any material.</p>
     <p><a class="btn" href="#inquire">Request a quote</a></p>
-    <img src="../assets/tank-lid.jpg" alt="TRUEGROUND cover on tank and lid" style="margin-top:1.2rem">
+    <img src="../assets/tank-lid.jpg" alt="500-gallon propane tank with landscape cover" style="margin-top:1.2rem">
   </section>
   <section class="section" id="covers">
     <div class="wrap">
-      <h2>A single finish. Two pieces.</h2>
-      <p class="lede">Closed, tank and lid read as one surface. The lid remains fully operational without removing anything.</p>
-      <div class="pair" style="margin-top:1rem">
-        <img src="../assets/lid-closed.jpg" alt="Lid cover closed">
-        <img src="../assets/lid-open.jpg" alt="Lid open for service">
-      </div>
-      <div class="cards" style="margin-top:1.4rem">
-        <article class="card"><h3>Sleeve</h3><p class="price">$389</p><p>Finished fabric wrap and matching lid cover. Kit about $145.</p></article>
-        <article class="card"><h3>Magnet</h3><p class="price">$649</p><p>Magnetic sheet for clean steel, with matching lid cover.</p></article>
-        <article class="card"><h3>Cast Film</h3><p class="price">$895</p><p>Printed film, special order. Lid cover included.</p></article>
+      <h2>The cover line</h2>
+      <div class="cards">
+        <article class="card"><h3>Sleeve</h3><p class="price">$389</p><p>Finished fabric wrap. Kit about $145.</p></article>
+        <article class="card"><h3>Magnet</h3><p class="price">$649</p><p>Magnetic sheet for clean steel.</p></article>
+        <article class="card"><h3>Cast Film</h3><p class="price">$895</p><p>Printed film, special order.</p></article>
       </div>
     </div>
   </section>
