@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>SIGHTLINE — The tank leaves the view</title>
+<meta name="description" content="Removable landscape covers for aboveground propane tanks. Made in the USA. Ships nationwide.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600&family=Outfit:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--paper:#F3EEE4;--ink:#161513;--mute:#5B574F;--line:rgba(22,21,19,.12);--accent:#5B6A4E;--max:1080px}
+*{box-sizing:border-box}html{scroll-behavior:smooth}
+body{margin:0;background:var(--paper);color:var(--ink);font:16.5px/1.55 Outfit,system-ui,sans-serif}
+img{max-width:100%;display:block}a{color:var(--accent)}
+.wrap{width:min(var(--max),calc(100% - 32px));margin-inline:auto}
+header{position:sticky;top:0;z-index:20;background:rgba(243,238,228,.92);backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}
+.nav{height:64px;display:flex;align-items:center;justify-content:space-between}
+.brand{letter-spacing:.22em;font-weight:600;text-decoration:none;color:var(--ink);font-size:.92rem}
+nav{display:flex;gap:1rem;align-items:center}
+nav a{color:var(--mute);text-decoration:none;font-size:.9rem}
+.menu{display:none;background:none;border:1px solid var(--line);padding:.4rem .7rem;border-radius:999px}
+.btn{display:inline-flex;background:var(--ink);color:#F3EEE4!important;text-decoration:none;padding:.75rem 1.15rem;border-radius:999px;font-weight:600;border:0;cursor:pointer}
+.hero{padding:2.2rem 0 1rem}
+h1,h2,h3{font-family:"Cormorant Garamond",Georgia,serif;font-weight:500;line-height:1.08;margin:0 0 .6rem}
+h1{font-size:clamp(2.4rem,8vw,4.4rem)}
+h2{font-size:clamp(1.8rem,4vw,2.6rem)}
+.lede{color:var(--mute);font-size:1.08rem;max-width:36rem}
+.usa{margin:1rem 0 0;font-size:.78rem;letter-spacing:.14em;text-transform:uppercase;color:var(--accent);font-weight:600}
+.grid{display:grid;gap:1rem}
+.g2{grid-template-columns:1fr 1fr}.g3{grid-template-columns:1fr 1fr 1fr}
+@media(max-width:800px){.g2,.g3{grid-template-columns:1fr}nav{display:none}nav.open{display:flex;flex-direction:column;position:absolute;right:16px;top:64px;background:var(--paper);padding:1rem;border:1px solid var(--line)}.menu{display:block}}
+.card{background:#fff;border:1px solid var(--line);padding:1.1rem 1.15rem}
+.price{font-family:"Cormorant Garamond",serif;font-size:2rem}
+.muted{color:var(--mute)}
+.section{padding:2.4rem 0;border-top:1px solid var(--line)}
+.pgrid{display:grid;grid-template-columns:repeat(3,1fr);gap:.7rem}
+@media(max-width:700px){.pgrid{grid-template-columns:1fr 1fr}}
+.pgrid figure{margin:0}figcaption{padding:.45rem 0;font-size:.82rem;letter-spacing:.08em;text-transform:uppercase}
+.compare{display:grid;grid-template-columns:1fr 1fr;gap:0;border:1px solid var(--line)}
+.compare div{min-height:220px;background-size:cover;background-position:center;position:relative}
+.compare span{position:absolute;left:10px;bottom:10px;background:rgba(22,21,19,.7);color:#fff;padding:.2rem .5rem;font-size:.75rem}
+form{display:grid;gap:.7rem}label{font-size:.8rem;letter-spacing:.08em;text-transform:uppercase}
+input,select,textarea{width:100%;padding:.7rem;border:1px solid var(--line);background:#fff;font:inherit}
+textarea{min-height:90px}
+footer{padding:2rem 0 3rem;color:var(--mute);font-size:.88rem;border-top:1px solid var(--line)}
+.ok{background:#fff;border:1px solid var(--line);padding:1rem}
+</style>
+</head>
+<body>
+<header><div class="wrap nav">
+  <a class="brand" href="#top">SIGHTLINE</a>
+  <button class="menu" data-menu type="button">Menu</button>
+  <nav data-nav>
+    <a href="#systems">Systems</a>
+    <a href="#grounds">Grounds</a>
+    <a href="#service">Service</a>
+    <a href="#inquire">Inquire</a>
+  </nav>
+</div></header>
+<main id="top">
+  <section class="hero">
+    <div class="wrap">
+      <p class="usa">Made in the United States · Ships anywhere in the USA</p>
+      <h1>The tank leaves the view.</h1>
+      <p class="lede">Removable landscape covers for aboveground ASME propane tanks. Light-value grounds only. Fill, gauge, and relief stay open.</p>
+      <p style="margin:1.1rem 0 0"><a class="btn" href="#inquire">Request a cover</a></p>
+    </div>
+    <div class="wrap" style="margin-top:1.4rem">
+      <div class="compare">
+        <div style="background-image:url('../assets/hero-bare.jpg')"><span>Bare tank</span></div>
+        <div style="background-image:url('../assets/hero-wrap.jpg')"><span>SIGHTLINE cover</span></div>
+      </div>
+    </div>
+  </section>
+  <section class="section" id="systems">
+    <div class="wrap">
+      <h2>Three systems. One hero size.</h2>
+      <p class="lede">Indicative retail on a 500-gallon tank. Other sizes are quoted. No weld. No drill.</p>
+      <div class="grid g3" style="margin-top:1.2rem">
+        <article class="card"><p class="usa">Default</p><h3>Sleeve</h3><p class="price">$389</p><p class="muted">Outdoor fabric sleeve with a service flap. Kit path about $145 if you want the pieces, not the finished install.</p></article>
+        <article class="card"><p class="usa">Premium</p><h3>Magnet</h3><p class="price">$649</p><p class="muted">Magnetic sheet on a clean ferrous shell. Fast on, fast off for inspection.</p></article>
+        <article class="card"><p class="usa">Special order</p><h3>Cast Film</h3><p class="price">$895</p><p class="muted">Printed cast film. Quoted and scheduled after photos of the shell.</p></article>
+      </div>
+      <p class="muted" style="margin-top:1rem">Sizes in scope: 120 vertical or horizontal, 250, 325, 500, 850, 1000 gallon.</p>
+    </div>
+  </section>
+  <section class="section" id="grounds">
+    <div class="wrap">
+      <h2>Light grounds. Not a hide.</h2>
+      <p class="lede">Birch, limestone, barn metal, prairie grass, winter bark, fieldstone. Dark hunting patterns are out of the line.</p>
+      <div class="pgrid" style="margin-top:1rem">
+        <figure><img src="../assets/pattern-birch-woodland.jpg" alt="Birch"><figcaption>Birch</figcaption></figure>
+        <figure><img src="../assets/pattern-limestone.jpg" alt="Limestone"><figcaption>Limestone</figcaption></figure>
+        <figure><img src="../assets/pattern-barn-silver.jpg" alt="Barn silver"><figcaption>Barn silver</figcaption></figure>
+        <figure><img src="../assets/pattern-prairie-grass.jpg" alt="Prairie"><figcaption>Prairie</figcaption></figure>
+        <figure><img src="../assets/pattern-winter-birch.jpg" alt="Winter bark"><figcaption>Winter bark</figcaption></figure>
+        <figure><img src="../assets/pattern-fieldstone.jpg" alt="Fieldstone"><figcaption>Fieldstone</figcaption></figure>
+      </div>
+      <img src="../assets/swatches.jpg" alt="Light-value swatches" style="margin-top:1rem;border:1px solid var(--line)">
+    </div>
+  </section>
+  <section class="section" id="service">
+    <div class="wrap grid g2">
+      <div>
+        <h2>If the driver cannot fill it, it is not installed.</h2>
+        <p class="lede">Pressure relief, fill, gauge, and data plate stay clear. The cover is screening — not insulation and not a fire enclosure.</p>
+      </div>
+      <img src="../assets/safety-access.jpg" alt="Service access at the dome">
+    </div>
+  </section>
+  <section class="section" id="inquire">
+    <div class="wrap grid g2">
+      <div>
+        <h2>Send the tank.</h2>
+        <p class="lede">Name, phone, site address, tank size. We ship anywhere in the United States.</p>
+        <div class="ok" data-ok hidden><strong>Saved on this device.</strong><p class="muted">Call or text the same details if you want it moving today.</p></div>
+        <form data-inquire data-store="sightline-inquiries">
+          <div><label for="n">Name</label><input id="n" name="name" required></div>
+          <div><label for="p">Phone</label><input id="p" name="phone" required></div>
+          <div><label for="a">Site address</label><input id="a" name="address" required></div>
+          <div><label for="t">Tank size</label>
+            <select id="t" name="tank" required>
+              <option>500 gal</option><option>120 gal vertical</option><option>120 gal horizontal</option>
+              <option>250 gal</option><option>325 gal</option><option>850 gal</option><option>1000 gal</option><option>Not sure</option>
+            </select>
+          </div>
+          <button class="btn" type="submit">Send inquiry</button>
+        </form>
+      </div>
+      <div>
+        <h3>What this is</h3>
+        <p class="muted">Removable visual and weather screening for aboveground ASME propane tanks. Manufactured in the United States of America by Americans.</p>
+        <h3>What this is not</h3>
+        <p class="muted">Not insulation. Not a building. Not a setback change. Not dark hunting camouflage.</p>
+      </div>
+    </div>
+  </section>
+</main>
+<footer><div class="wrap">
+  <p>SIGHTLINE</p>
+  <p>Ships anywhere in the United States. Every SIGHTLINE product is manufactured in the United States of America by Americans.</p>
+  <p>U.S. Patent pending, App. No. 64/158,376, filed September 19, 2026. Intellectual property held by Micah Kleinert.</p>
+  <p>Visual / weather screening only — not insulation, not a fire enclosure, and not a modification of the tank.</p>
+  <p><a href="../index.html">All three brand options</a></p>
+</div></footer>
+<script>
+(function(){
+  const t=document.querySelector('[data-menu]');
+  const n=document.querySelector('[data-nav]');
+  if(t&&n){t.onclick=()=>{const o=n.classList.toggle('open');t.setAttribute('aria-expanded',o?'true':'false');};}
+  const form=document.querySelector('[data-inquire]');
+  if(!form) return;
+  form.addEventListener('submit',function(e){
+    e.preventDefault();
+    const d=Object.fromEntries(new FormData(form).entries());
+    try{
+      const k=form.getAttribute('data-store')||'inquiries';
+      const arr=JSON.parse(localStorage.getItem(k)||'[]');
+      arr.push({...d,at:new Date().toISOString()});
+      localStorage.setItem(k,JSON.stringify(arr));
+    }catch(err){}
+    form.hidden=true;
+    const ok=document.querySelector('[data-ok]');
+    if(ok) ok.hidden=false;
+  });
+})();
+</script>
+</body></html>
