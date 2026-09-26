@@ -3,132 +3,21 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>SIGHTLINE — The tank leaves the view</title>
-<meta name="description" content="Removable landscape covers for aboveground propane tanks. Handmade in the USA. Ships anywhere in the USA.">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600&family=Outfit:wght@400;500;600&display=swap" rel="stylesheet">
+<title>Three brand options</title>
 <style>
-:root{--paper:#F3EEE4;--ink:#161513;--mute:#5B574F;--line:rgba(22,21,19,.12);--accent:#5B6A4E;--max:1080px}
-*{box-sizing:border-box}html{scroll-behavior:smooth}
-body{margin:0;background:var(--paper);color:var(--ink);font:16.5px/1.55 Outfit,system-ui,sans-serif}
-img{max-width:100%;display:block}a{color:var(--accent)}
-.wrap{width:min(var(--max),calc(100% - 32px));margin-inline:auto}
-header{position:sticky;top:0;z-index:20;background:rgba(243,238,228,.92);backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}
-.nav{height:64px;display:flex;align-items:center;justify-content:space-between}
-.brand{letter-spacing:.22em;font-weight:600;text-decoration:none;color:var(--ink);font-size:.92rem}
-nav{display:flex;gap:1rem}nav a{color:var(--mute);text-decoration:none;font-size:.9rem}
-.menu{display:none;background:none;border:1px solid var(--line);padding:.4rem .7rem;border-radius:999px}
-.btn{display:inline-flex;background:var(--ink);color:#F3EEE4!important;text-decoration:none;padding:.75rem 1.15rem;border-radius:999px;font-weight:600;border:0;cursor:pointer}
-.hero{padding:2.2rem 0 1rem}
-h1,h2,h3{font-family:"Cormorant Garamond",Georgia,serif;font-weight:500;line-height:1.08;margin:0 0 .6rem}
-h1{font-size:clamp(2.4rem,8vw,4.4rem)}h2{font-size:clamp(1.8rem,4vw,2.6rem)}
-.ship{margin:.35rem 0 1rem;font-size:.86rem;letter-spacing:.08em;text-transform:uppercase;color:var(--accent);font-weight:600}
-.lede{color:var(--mute);font-size:1.08rem;max-width:40rem}
-.g3{display:grid;gap:1rem;grid-template-columns:1fr 1fr 1fr}
-@media(max-width:800px){.g3{grid-template-columns:1fr}nav{display:none}nav.open{display:flex;flex-direction:column;position:absolute;right:16px;top:64px;background:var(--paper);padding:1rem;border:1px solid var(--line)}.menu{display:block}}
-.card{background:#fff;border:1px solid var(--line);padding:1.1rem}
-.price{font-family:"Cormorant Garamond",serif;font-size:2rem}
-.muted{color:var(--mute)}
-.section{padding:2.4rem 0;border-top:1px solid var(--line)}
-.pgrid{display:grid;grid-template-columns:repeat(3,1fr);gap:.7rem}
-@media(max-width:700px){.pgrid{grid-template-columns:1fr 1fr}}
-form{display:grid;gap:.7rem}label{font-size:.8rem;letter-spacing:.08em;text-transform:uppercase}
-input,select{width:100%;padding:.7rem;border:1px solid var(--line);background:#fff;font:inherit}
-footer{padding:2rem 0 3rem;color:var(--mute);font-size:.88rem;border-top:1px solid var(--line)}
-.ok{background:#fff;border:1px solid var(--line);padding:1rem}
-.about p{max-width:40rem}
+body{margin:0;background:#111;color:#EDE8DC;font:16px/1.5 system-ui,sans-serif}
+.wrap{width:min(880px,calc(100% - 28px));margin:0 auto;padding:2rem 0 3rem}
+a.card{display:block;text-decoration:none;color:inherit;border:1px solid #333;padding:1.1rem;margin:0 0 .8rem;background:#1A1A1A}
+.muted{color:#A39B8C}
 </style>
 </head>
 <body>
-<header><div class="wrap nav">
-  <a class="brand" href="#top">SIGHTLINE</a>
-  <button class="menu" data-menu type="button">Menu</button>
-  <nav data-nav>
-    <a href="#systems">Systems</a>
-    <a href="#about">About</a>
-    <a href="#inquire">Inquire</a>
-  </nav>
-</div></header>
-<main id="top">
-  <section class="hero">
-    <div class="wrap">
-      <h1>SIGHTLINE</h1>
-      <p class="ship">We ship anywhere in the USA</p>
-      <p class="lede">Removable landscape covers for aboveground ASME propane tanks. The lid stays fully functional without removing any material.</p>
-      <p style="margin:1.1rem 0 0"><a class="btn" href="#inquire">Request a cover</a></p>
-    </div>
-    <div class="wrap" style="margin-top:1.4rem">
-      <img src="../assets/tank-lid.jpg" alt="500-gallon propane tank with landscape cover">
-    </div>
-  </section>
-  <section class="section" id="systems">
-    <div class="wrap">
-      <h2>Three systems. One hero size.</h2>
-      <p class="lede">Indicative retail on a 500-gallon tank. Other sizes quoted. No weld. No drill.</p>
-      <div class="g3" style="margin-top:1.2rem">
-        <article class="card"><h3>Sleeve</h3><p class="price">$389</p><p class="muted">Outdoor fabric sleeve. Kit path about $145.</p></article>
-        <article class="card"><h3>Magnet</h3><p class="price">$649</p><p class="muted">Magnetic sheet on a clean ferrous shell.</p></article>
-        <article class="card"><h3>Cast Film</h3><p class="price">$895</p><p class="muted">Printed cast film. Quoted from shell photos.</p></article>
-      </div>
-      <p class="muted" style="margin-top:1rem">Sizes: 120 V/H, 250, 325, 500, 850, 1000 gallon. Light-value grounds only.</p>
-      <div class="pgrid" style="margin-top:1rem">
-        <img src="../assets/pattern-birch-woodland.jpg" alt="Birch">
-        <img src="../assets/pattern-limestone.jpg" alt="Limestone">
-        <img src="../assets/pattern-barn-silver.jpg" alt="Barn silver">
-      </div>
-    </div>
-  </section>
-  <section class="section" id="about">
-    <div class="wrap about">
-      <h2>About</h2>
-      
-<p>Micah Kleinert grew up on a dairy farm in West Branch, Michigan. Hard work was not a slogan. It was the day.</p>
-<p>He operated his own small business in northern Michigan resort towns for more than 25 years. That work is how an idea becomes a finished product a customer can use.</p>
-<p>The propane and refined fuels division manager role at Ellsworth Farmers Exchange is a return to those childhood and young-teen roots. The country atmosphere he grew up in is the same atmosphere he wants his own children to know. The values that farm taught him still hold.</p>
-<p>Every cover is handmade in the USA using high-quality marine-grade Sunbrella and other canvas materials.</p>
-
-    </div>
-  </section>
-  <section class="section" id="inquire">
-    <div class="wrap" style="max-width:28rem">
-      <h2>Inquire</h2>
-      <div class="ok" data-ok hidden><strong>Received on this device.</strong></div>
-      <form data-inquire data-store="sightline-inquiries">
-        <div><label>Name</label><input name="name" required></div>
-        <div><label>Phone</label><input name="phone" required></div>
-        <div><label>Site address</label><input name="address" required></div>
-        <div><label>Tank size</label><select name="tank"><option>500 gal</option><option>120 gal</option><option>250 gal</option><option>325 gal</option><option>850 gal</option><option>1000 gal</option></select></div>
-        <button class="btn" type="submit">Send inquiry</button>
-      </form>
-    </div>
-  </section>
-</main>
-<footer><div class="wrap">
-  <p>SIGHTLINE</p>
-  <p>U.S. Patent pending, App. No. 64/158,376, filed September 19, 2026. Intellectual property held by Micah Kleinert.</p>
-  <p>Visual and weather screening only — not insulation, not a fire enclosure, and not a modification of the tank.</p>
-  <p><a href="../index.html">All three brand options</a></p>
-</div></footer>
-<script>
-(function(){
-  const t=document.querySelector('[data-menu]');
-  const n=document.querySelector('[data-nav]');
-  if(t&&n){t.onclick=()=>{const o=n.classList.toggle('open');t.setAttribute('aria-expanded',o?'true':'false');};}
-  const form=document.querySelector('[data-inquire]');
-  if(!form) return;
-  form.addEventListener('submit',function(e){
-    e.preventDefault();
-    const d=Object.fromEntries(new FormData(form).entries());
-    try{
-      const k=form.getAttribute('data-store')||'inquiries';
-      const arr=JSON.parse(localStorage.getItem(k)||'[]');
-      arr.push({...d,at:new Date().toISOString()});
-      localStorage.setItem(k,JSON.stringify(arr));
-    }catch(err){}
-    form.hidden=true;
-    const ok=document.querySelector('[data-ok]');
-    if(ok) ok.hidden=false;
-  });
-})();
-</script>
-</body></html>
+<div class="wrap">
+  <p class="muted">Same product · three names</p>
+  <h1>Brand options</h1>
+  <a class="card" href="sightline/"><strong>SIGHTLINE</strong><br>Architectural catalog.</a>
+  <a class="card" href="opendome/"><strong>OPENDOME</strong><br>Specifications first.</a>
+  <a class="card" href="trueground/"><strong>TRUEGROUND</strong><br>Handmade outdoor brand.</a>
+</div>
+</body>
+</html>
