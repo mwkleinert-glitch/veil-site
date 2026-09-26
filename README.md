@@ -37,14 +37,14 @@ Replace concept photos with real Northern Michigan installs when the pilot tanks
 - Cast Film ~$895 special order on 500-gal
 - Other sizes (120 V/H, 250, 325, 850, 1000): quote only
 - No other prices invented
-- Patent line: U.S. Patent pending, App. No. 64/158,376, filed September 19, 2026. Not an issued patent.
+- Patent line: U.S. Patent pending, App. No. 64/158,376, filed September 19, 2026.
 - Composer photos stay in the visitor’s browser (no server upload)
 
 ## IP footer templates
 
 **Current footer (post-filing)**
 
-> VEIL by EFE is a trade style. Product intellectual property is held by Micah Kleinert and is not assigned unless a separate written assignment says otherwise. U.S. Patent pending, App. No. 64/158,376, filed September 19, 2026. Not an issued patent. VEIL is visual / weather screening only — not insulation, not a fire enclosure, and not a modification of the tank.
+> VEIL by EFE is a trade style. Product intellectual property is held by Micah Kleinert and is not assigned unless a separate written assignment says otherwise. U.S. Patent pending, App. No. 64/158,376, filed September 19, 2026. VEIL is visual / weather screening only — not insulation, not a fire enclosure, and not a modification of the tank.
 
 ## Wire the inquiry form
 
