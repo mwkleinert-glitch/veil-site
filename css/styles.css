@@ -54,14 +54,16 @@ h3 { font-size: 1.25rem; }
   border-bottom: 1px solid var(--line);
 }
 .nav {
-  height: var(--nav-h);
+  height: 76px;
   display: flex; align-items: center; justify-content: space-between; gap: 1rem;
 }
-.brand { display: flex; align-items: baseline; gap: 0.45rem; text-decoration: none; color: var(--ink); }
+.brand { display: flex; align-items: baseline; gap: 0.45rem; text-decoration: none; color: var(--sage); }
 .brand-mark {
   font-family: var(--serif);
-  font-size: 1.35rem;
-  letter-spacing: 0.16em;
+  font-size: 2.15rem;
+  letter-spacing: 0.2em;
+  color: var(--sage);
+  font-weight: 600;
 }
 .brand-by { font-size: 0.72rem; letter-spacing: 0.08em; color: var(--ink-soft); text-transform: uppercase; }
 .nav-links { display: flex; gap: 1.1rem; align-items: center; }
